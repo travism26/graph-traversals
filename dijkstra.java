@@ -65,8 +65,8 @@ public class dijkstra{
 		return false;
 	}
 	public void printResults(ArrayList<dijkstra> results){
-		for(int i=0; i<results.size();i++){
-			System.out.print("The minimum distance required to reach "+ results.get(i).getTown().getName()+" " + results.get(i).getDistance()+", and the path is: {");
+		for(int i=1; i<results.size();i++){
+			System.out.print("The minimum distance required to reach "+ results.get(i).getTown().getName()+" from "+ results.get(0).getTown().getName() +" is "+ results.get(i).getDistance() +", the path is: {");
 			for(int j =0; j<results.get(i).getPath().size();j++){
 				System.out.print(""+results.get(i).getPath().get(j).getName()+"-->");
 			}
