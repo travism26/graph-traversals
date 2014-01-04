@@ -282,7 +282,6 @@ public class dijkstra{
 	}
 	public static void main(String[] args){
 		vertex obj = new vertex();
-		graphTraversal nobj = new graphTraversal();
 		dijkstra dobj = new dijkstra();
 		
 		/*
